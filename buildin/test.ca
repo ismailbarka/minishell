@@ -1,0 +1,6 @@
+#include "minishell.h"
+
+int main()
+{
+    write(1, "=\"\"\n",4);
+}
