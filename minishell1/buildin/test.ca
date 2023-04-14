@@ -1,0 +1,16 @@
+#include "minishell.h"
+
+int main() {
+
+
+        int out = open("a1aas.txt", O_CREAT | O_RDONLY, 0777);
+        dup2(out, 1);
+        printf("child");
+
+        int out = open("a1aas.txt", O_CREAT | O_WRONLY, 0777);
+        dup2(out, 1);
+        printf("child");
+
+
+    return 0;
+}
